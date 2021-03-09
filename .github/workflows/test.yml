@@ -16,5 +16,8 @@ jobs:
       - name: ls
         run: ls -al
 
+      - name: sha
+        run: echo ${{ github.sha }}
+
       - name: cat
         run: cat README.md
