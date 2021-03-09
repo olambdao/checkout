@@ -3,7 +3,8 @@ name: Tests
 on:
   push:
     tags:
-      - 'v*'
+      - v*
+      - develop-*
 
 jobs:
   build:
@@ -16,7 +17,7 @@ jobs:
       - name: ls
         run: ls -al
 
-      - name: sha
+      - name: print sha
         run: echo ${{ github.sha }}
 
       - name: cat
